@@ -12,18 +12,18 @@ let secondCard = false;
 
 //Items array
 const items = [
-  { name: "ball", image: "ball.png" },
-  { name: "bathing-suit", image: "bathing-suit.png" },
-  { name: "bikini", image: "bikini.png" },
-  { name: "buoy-flamingo", image: "buoy-flamingo.png" },
-  { name: "buoy", image: "buoy.png" },
-  { name: "camera-2", image: "camera-2.png" },
-  { name: "camera", image: "camera.png" },
-  { name: "ice-cream", image: "ice-cream.png" },
-  { name: "parasol-2", image: "parasol-2.png" },
-  { name: "sloth", image: "parasol.png" },
-  { name: "sunglasses-2", image: "sunglasses-2.png" },
-  { name: "sunglasses", image: "sunglasses.png" },
+  { name: "ball", image: "./assets/ball.png" },
+  { name: "bathing-suit", image: "./assets/suit.png" },
+  { name: "bikini", image: "./assets/bikini.png" },
+  { name: "buoy-flamingo", image: "./assets/buoy-flamingo.png" },
+  { name: "buoy", image: "./assets/buoy.png" },
+  { name: "camera-2", image: "./assets/camera-2.png" },
+  { name: "camera", image: "./assets/camera.png" },
+  { name: "ice-cream", image: "./assets/ice-cream.png" },
+  { name: "parasol-2", image: "./assets/parasol-2.png" },
+  { name: "sloth", image: "./assets/parasol.png" },
+  { name: "sunglasses-2", image: "./assets/sunglasses-2.png" },
+  { name: "sunglasses", image: "./assets/sunglasses.png" },
 ];
 
 //Initial Time
@@ -102,13 +102,13 @@ const matrixGenerator = (cardValues, size = 4) => {
         Create Cards
         before => front side (contains question mark)
         after => back side (contains actual image);
-        data-card-values is a custom attribute which stores the names of the cards to match later
+./assets/        data-card-values is a custom attribute which stores the names of the cards to match later
       */
     gameContainer.innerHTML += `
      <div class="card-container" data-card-value="${cardValues[i].name}">
         <div class="card-before">?</div>
         <div class="card-after">
-        <img src="${cardValues[i].image}" class="image"/></div>
+        <img src="${cardValues[i].image}" ./assets/class="image"/>./assets/</div>
      </div>
      `;
   }
